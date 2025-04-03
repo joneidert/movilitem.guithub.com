@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cfcfcf;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        h1 {
+            color: #c0392b;
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 1.5em;
+            line-height: 1.6;
+            color: #5c5a5a;
+        }
+        .menu-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff; /* Color azul para el menú */
+            padding: 10px 20px;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            color: #fff;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .navbar-nav {
+            position: absolute; /* Esto permite mover el elemento libremente */
+        top: 30px; /* Ajusta el valor según la distancia hacia abajo */
+        left: 20%; /* Mueve el elemento 50 píxeles a la derecha (equivale a 5 cm aproximadamente) */
+        display: flex;
+        right: 0;  /* Para que ocupe todo el ancho de la página */
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+    .navbar-nav {
+        position: absolute; /* Hace que el navbar se coloque en posición específica */
+        left: 0; /* Coloca el nav en el lado izquierdo */
+        top: 0; /* Ajusta según la altura deseada */
+    }
+    .nav-item {
+        margin: 0 5px;
+        padding: 8px;
+        display: block;
+    }
+}
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 12px;
+       
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav {
+                display: none;
+                flex-direction: column;
+                background-color: #007bff; /* Color del menú desplegable en móvil */
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 80%;
+                padding: 6px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .menu-container.open .navbar-nav {
+                display: flex;
+            }
+        }
+
+        .contactos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contacto img {
+            width: 225px;
+            height: 58px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <img src="images/logo2.png" alt="Logo" class="logo">
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="quienes.html">Quienes Somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="directiva.html">Directiva</a></li>
+            <li class="nav-item"><a class="nav-link" href="pensun.html">Pensum</a></li>
+            <li class="nav-item"><a class="nav-link" href="graduante.html">Graduante</a></li>
+            <li class="nav-item"><a class="nav-link" href="buzon.html">Buzón de Sugerencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contactos</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuContainer = document.querySelector('.menu-container');
+
+        menuToggle.addEventListener('click', () => {
+            menuContainer.classList.toggle('open');
+        });
+    </script>
+
+    <div class="container" id="contactos">
+        <!-- Banner -->
+        <img src="img2/arriba2.jpg" alt="Banner Misión" class="banner">
+        
+        <h1>Organigrama Item</h1>
+        <div class="contactos">
+            <div class="contacto">
+                <a href="mailto:item.emmaus@gmail.com">
+                
+                    <img src="images/org.png" alt="Organigrama" style="width: 100%; max-width: 434px; height: auto;">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
