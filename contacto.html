@@ -57,6 +57,11 @@
         }
 
         .navbar-nav {
+            position: absolute; /* Esto permite mover el elemento libremente */
+        top: 30px; /* Ajusta el valor según la distancia hacia abajo */
+        left: 20%; /* Mueve el elemento 50 píxeles a la derecha (equivale a 5 cm aproximadamente) */
+        display: flex;
+        right: 0;  /* Para que ocupe todo el ancho de la página */
             display: flex;
             list-style: none;
             margin: 0;
@@ -133,7 +138,7 @@
             <li class="nav-item"><a href="organigrama.html" class="nav-link">Organigrama</a></li>
             <li class="nav-item"><a href="directiva.html" class="nav-link">Directiva</a></li>
             <li class="nav-item"><a href="pensun.html" class="nav-link">Pensum</a></li>
-            <li class="nav-item"><a href="graduante.html" class="nav-link">Graduante</a></li>
+            <li class="nav-item"><a class="nav-link" href="graduante.html">Graduanciones</a></li>
             <li class="nav-item"><a href="buzon.html" class="nav-link">Buzón de Sugerencia</a></li>
             <li class="nav-item"><a href="galeria.html" class="nav-link">Galería</a></li>
         </ul>
