@@ -471,8 +471,9 @@ a img.aligncenter {
 
 .top-navbar .navbar-light .navbar-nav .nav-link{
 	color: #ffffff;
-	font-size: 10px;
+	font-size: 9px;
 	font-weight: 500;
+    
 }
 .navbar-right .hover-btn-new {
     display: inline-block;
@@ -482,7 +483,7 @@ a img.aligncenter {
     text-align: center; /* Centers the text horizontally */
     background-color: orange; /* Customize as needed */
     color: white;
-    font-size: 14px; /* Adjust as needed */
+    font-size: 18px; /* Adjust as needed */
     font-weight: bold;
     border-radius: 4px; /* Gives rounded corners */
     text-decoration: none; /* Removes underline */
@@ -506,7 +507,7 @@ a img.aligncenter {
 .top-navbar .navbar-light .navbar-nav .nav-item::after {
     position: absolute;
     content: '';
-    left: 50%;
+    left: 60%;
     bottom: auto;
     top: 11px;
     width: 5px;
